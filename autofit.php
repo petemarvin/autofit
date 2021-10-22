@@ -63,13 +63,14 @@
           var intFontSize = parseInt($('#text').css('font-size'));
           while (intTextHeight > intMainHeight) {
               console.log(intTextHeight,intMainHeight);
-            $('body').html($('#text').height()); 
+            
               intFontSize= intFontSize-0.5;
               $('#text').css('font-size', intFontSize+ 'px');
               intMainHeight = $('#main').height();
               intTextHeight = $('#text').height();
           }
           final = intFontSize;
+            $('body').html($('#text').height()); 
           //show();
 
 
