@@ -3,7 +3,7 @@
 $payload = file_get_contents ( 'autofit.html' );
 $options = array(
     'http' => array(
-
+      'content' => $payload
     )
 );
 $context  = stream_context_create($options);
