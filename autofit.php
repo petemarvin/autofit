@@ -42,9 +42,14 @@
   <body>
     <div id="main">
     <div id="text">
-      - GOING TO TALK ABOUT BURNOUT<br />
-- EVERY ARTIST BURNS OUT<br />
-- WHAT CAN YOU DO TO AVOID IT?
+      <?php
+        if (isset($_GET["q"])){
+          $content = $_GET["q"];
+          $content_p = str_replace("\r\n", "</p>\n<p>", $content);
+          $content_p = "<p>" . $content_p . "</p>";
+          echo  $content_p;
+        }
+      ?>
     </div>    
 </div>
     
