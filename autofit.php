@@ -43,7 +43,7 @@
     <div id="main">
     <div id="text">
       <?php
-        if (isset($_GET['q']){
+        if (isset($_GET['q'])){
           echo nl2br($_GET['q']);
         }
       ?>
