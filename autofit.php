@@ -55,9 +55,8 @@
     
 
     <script>
-      
-      $(window).load(function() {
-          var intMainHeight = $('#main').height();
+      $(window).on('load', function (e) {
+        var intMainHeight = $('#main').height();
           var intTextHeight = $('#text').height();
           var intFontSize = parseInt($('#text').css('font-size'));
           while (intTextHeight > intMainHeight) {
@@ -69,7 +68,8 @@
           }
           final = intFontSize;
           $('body').html(final);
-      });
+      })
+
       
     </script>
   </body>
