@@ -50,6 +50,8 @@
           echo  $content_p;
         }
       ?>
+      
+      <input name='button' type="button value="show">
     </div>    
 </div>
     
@@ -68,11 +70,15 @@
           }
           final = intFontSize;
 
-          $('body').html(final);
+          
 
           
       })
-
+  
+      
+      function show(){
+       $('body').html($('#text').css('font-size')); 
+      }
       
     </script>
   </body>
