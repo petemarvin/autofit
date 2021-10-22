@@ -1,4 +1,5 @@
 <?php
+echo 1;
    $url = 'http://PhantomJScloud.com/api/browser/v2/ak-4esrk-11g01-drxkg-jfxvx-xbhc6/';
 $payload = file_get_contents ( 'autofit.html' );
 $options = array(
