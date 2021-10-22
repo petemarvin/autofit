@@ -51,7 +51,7 @@
         }
       ?>
       
-      <input id="button" name='button' type="button" value="show">
+
     </div>    
 </div>
     
@@ -69,11 +69,8 @@
               intTextHeight = $('#text').height();
           }
           final = intFontSize;
+          show();
 
-          
-        $("#button").click(function(){
-            show();
-        });
 
       });
   
