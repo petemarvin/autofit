@@ -42,11 +42,11 @@
   <body>
     <div id="main">
     <div id="text">
-      <p>- LESS SPECIFIC YOU ARE — LESS YOU RESONATE — GROOM FOR A SPECIFIC JOB ROLE — NOT 'EVERYTHING'</p>
-      <p>- ALIGN WITH THE TECHNOLOGY — LOOK AT WHAT YOUR TARGET STUDIO USES — ALIGN WITH THAT</p>
-      <p>- PAY ATTENTION TO UPCOMING TECH & TRENDS! — STAY AHEAD OF CURB — QUALIFY FOR NEW OPPORTUNITIES</p>
-      <p>- THIS WHY COLLEGES SUCK — CURRICULUMS OUTDATED</p>
-
+      <?php
+        if (isset($_GET['q']){
+          echo nl2br($_GET['q']);
+        }
+      ?>
     </div>    
 </div>
     
