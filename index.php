@@ -1,5 +1,5 @@
 <?php
-echo 1;
+echo 2;
 $url = 'http://PhantomJScloud.com/api/browser/v2/ak-4esrk-11g01-drxkg-jfxvx-xbhc6/';
 $payload = file_get_contents ( 'request.json' );
 $options = array(
