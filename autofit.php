@@ -57,18 +57,8 @@
     
 
     <script>
-      $(window).on('load', function (e) {
-          
-
-          
-          $.when(ajax1()).done(function(a1){
-              show();
-          });
-
-      });
-      
-      function ajax1() {
-          var intMainHeight = $('#main').height();
+      $( document ).ready(function() {
+        var intMainHeight = $('#main').height();
           var intTextHeight = $('#text').height();
           var intFontSize = parseInt($('#text').css('font-size'));
           let promises = [];
@@ -81,10 +71,13 @@
               intTextHeight = $('#text').height();
           }
           final = intFontSize;
-      }
-      
+      });
+      $(window).on('load', function (e) {
+          
+        show();
+      });
       function show(){
-       $('body').html("<input name='font' value='"+$('#text').css('font-size') + "'>"); 
+       $('body').html($('#text').css('font-size')); 
       }
       
     </script>
