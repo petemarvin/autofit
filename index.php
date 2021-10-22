@@ -3,9 +3,7 @@
 $payload = file_get_contents ( 'autofit.html' );
 $options = array(
     'http' => array(
-        'header'  => "Content-type: application/json\r\n",
-        'method'  => 'POST',
-        'content' => $payload
+
     )
 );
 $context  = stream_context_create($options);
