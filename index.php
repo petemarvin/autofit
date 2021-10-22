@@ -1,3 +1,3 @@
 <?php
-  echo "hello"
+   $response = file_get_contents('autofit.html');
 ?>
