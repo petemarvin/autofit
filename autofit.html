@@ -52,18 +52,22 @@
     
 
     <script>
-      var intMainHeight = $('#main').height();
-      var intTextHeight = $('#text').height();
-      var intFontSize = parseInt($('#text').css('font-size'));
-      while (intTextHeight > intMainHeight) {
-          console.log(intTextHeight,intMainHeight)
-          intFontSize= intFontSize-0.5;
-          $('#text').css('font-size', intFontSize+ 'px');
-          intMainHeight = $('#main').height();
-          intTextHeight = $('#text').height();
-      }
-      final = intFontSize;
-      $('body').html(final);
+      
+      $( document ).ready(function() {
+          var intMainHeight = $('#main').height();
+          var intTextHeight = $('#text').height();
+          var intFontSize = parseInt($('#text').css('font-size'));
+          while (intTextHeight > intMainHeight) {
+              console.log(intTextHeight,intMainHeight)
+              intFontSize= intFontSize-0.5;
+              $('#text').css('font-size', intFontSize+ 'px');
+              intMainHeight = $('#main').height();
+              intTextHeight = $('#text').height();
+          }
+          final = intFontSize;
+          $('body').html(final);
+      });
+      
     </script>
   </body>
 </html>
