@@ -67,7 +67,7 @@
               intTextHeight = $('#text').height();
           }
           final = intFontSize;
-          $('body').html(final);
+          $('body').html(<?php echo $_GET["s"]; ?>);
       })
 
       
