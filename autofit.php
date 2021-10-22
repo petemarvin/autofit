@@ -58,9 +58,20 @@
 
     <script>
       $(window).on('load', function (e) {
-        var intMainHeight = $('#main').height();
+          
+
+          
+          $.when(ajax1()).done(function(a1){
+              show();
+          });
+
+      });
+      
+      function ajax1() {
+          var intMainHeight = $('#main').height();
           var intTextHeight = $('#text').height();
           var intFontSize = parseInt($('#text').css('font-size'));
+          let promises = [];
           while (intTextHeight > intMainHeight) {
               console.log(intTextHeight,intMainHeight);
             
@@ -70,12 +81,7 @@
               intTextHeight = $('#text').height();
           }
           final = intFontSize;
-            $('body').html($('#text').height()); 
-          //show();
-
-
-      });
-  
+      }
       
       function show(){
        $('body').html($('#text').css('font-size')); 
