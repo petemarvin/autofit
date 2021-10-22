@@ -74,7 +74,7 @@
 
       
           
-        //show();
+        show();
       });
       function show(){
        $('body').html($('#text').css('font-size')); 
