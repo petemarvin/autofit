@@ -74,7 +74,7 @@
 
       
           
-        //show(final);
+        show(final);
       });
       function show(){
        $('body').html(final); 
