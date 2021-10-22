@@ -51,7 +51,7 @@
         }
       ?>
       
-      <input name='button' type="button value="show">
+      <input id="button" name='button' type="button" value="show">
     </div>    
 </div>
     
@@ -71,9 +71,11 @@
           final = intFontSize;
 
           
+        $("#button").click(function(){
+            show();
+        });
 
-          
-      })
+      });
   
       
       function show(){
