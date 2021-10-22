@@ -74,10 +74,10 @@
 
       
           
-        show();
+        show(final);
       });
       function show(){
-       $('body').html($('#text').css('font-size')); 
+       $('body').html(final); 
       }
       
     </script>
