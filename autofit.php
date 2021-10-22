@@ -45,7 +45,7 @@
       <?php
         if (isset($_GET["q"])){
           $content = $_GET["q"];
-          $content_p = str_replace("\r\n", "</p>\n<p>", $content);
+          $content_p = str_replace("\n", "</p>\n<p>", $content);
           $content_p = "<p>" . $content_p . "</p>";
           echo  $content_p;
         }
