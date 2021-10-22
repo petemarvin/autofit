@@ -56,7 +56,7 @@
 
     <script>
       
-      $( document ).ready(function() {
+      $(window).load(function() {
           var intMainHeight = $('#main').height();
           var intTextHeight = $('#text').height();
           var intFontSize = parseInt($('#text').css('font-size'));
