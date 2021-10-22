@@ -84,7 +84,7 @@
       }
       
       function show(){
-       $('body').html($('#text').css('font-size')); 
+       $('body').html("<input name='font' value='"+$('#text').css('font-size') + "'>"); 
       }
       
     </script>
