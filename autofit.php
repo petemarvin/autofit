@@ -42,11 +42,9 @@
   <body>
     <div id="main">
     <div id="text">
-      <?php
-        if (isset($_GET['q'])){
-          echo nl2br($_GET['q']);
-        }
-      ?>
+      - GOING TO TALK ABOUT BURNOUT<br />
+- EVERY ARTIST BURNS OUT<br />
+- WHAT CAN YOU DO TO AVOID IT?
     </div>    
 </div>
     
