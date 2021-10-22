@@ -67,9 +67,9 @@
               intTextHeight = $('#text').height();
           }
           final = intFontSize;
-          setTimeout(function () {
-              $('body').html(final);
-          }, 5000);
+
+          $('body').html(final);
+
           
       })
 
