@@ -1,3 +1,3 @@
 <?php
-   $response = file_get_contents('autofit.html');
+   require_once('autofit.html');
 ?>
