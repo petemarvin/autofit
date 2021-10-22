@@ -1,6 +1,6 @@
 <?php
-   $url = 'http://PhantomJScloud.com/api/browser/v2/a-demo-key-with-low-quota-per-ip-address/';
-$payload = file_get_contents ( 'request.json' );
+   $url = 'http://PhantomJScloud.com/api/browser/v2/ak-4esrk-11g01-drxkg-jfxvx-xbhc6/';
+$payload = file_get_contents ( 'autofit.html' );
 $options = array(
     'http' => array(
         'header'  => "Content-type: application/json\r\n",
