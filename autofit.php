@@ -72,7 +72,7 @@
 
       
           
-        show(intTextHeight);
+        show(final);
       });
       function show(final){
        $('body').html(final); 
