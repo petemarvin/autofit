@@ -53,7 +53,7 @@
       </div>    
     </div>
     
-    <div id="text">
+    <div id="font">
       
     </div>
     
@@ -78,7 +78,7 @@
       });
       function show(final){
         $('#main').hide(); 
-       $('#text').html(final); 
+       $('#font').html(final); 
       }
       
     </script>
