@@ -39,19 +39,23 @@
   </head>
   <body>
     <div id="main">
-    <div id="text">
-      <?php
-        if (isset($_GET["q"])){
-          $content = $_GET["q"];
-          $content_p = str_replace("new_line", "</p>\r\n<p>", $content);
-          $content_p = "<p>" . $content_p . "</p>";
-          echo  $content_p;
-        }
-      ?>
-      
+      <div id="text">
+        <?php
+          if (isset($_GET["q"])){
+            $content = $_GET["q"];
+            $content_p = str_replace("new_line", "</p>\r\n<p>", $content);
+            $content_p = "<p>" . $content_p . "</p>";
+            echo  $content_p;
+          }
+        ?>
 
-    </div>    
-</div>
+
+      </div>    
+    </div>
+    
+    <div id="text">
+      
+    </div>
     
 
     <script>
@@ -73,7 +77,8 @@
         show(final );
       });
       function show(final){
-       $('body').html(final); 
+        $('#main').hide(); 
+       $('#text').html(final); 
       }
       
     </script>
