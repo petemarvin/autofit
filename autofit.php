@@ -57,19 +57,18 @@
     <script>
       $(window).on('load', function (e) {
         var intMainHeight = $('#main').height();
-          var intTextHeight = $('#text').height();
-          var intFontSize = parseInt($('#text').css('font-size'));
-           text = "";
-          while (intTextHeight > intMainHeight) {
-              console.log(intTextHeight,intMainHeight);
-              
-              intFontSize= intFontSize-0.5;
-              $('#text').css('font-size', intFontSize+ 'px');
-              intMainHeight = $('#main').height();
-              intTextHeight = $('#text').height();
-              text = text + intMainHeight + " : " + intTextHeight + "<br>
-          }
-          final = intFontSize;
+        var intTextHeight = $('#text').height();
+        var intFontSize = parseInt($('#text').css('font-size'));
+        text = "";
+        while (intTextHeight > intMainHeight) {
+            console.log(intTextHeight,intMainHeight);
+            intFontSize= intFontSize-0.5;
+            $('#text').css('font-size', intFontSize+ 'px');
+            intMainHeight = $('#main').height();
+            intTextHeight = $('#text').height();
+            text = text + intMainHeight + " : " + intTextHeight + "<br>";
+        }
+        final = intFontSize;
 
       
           
