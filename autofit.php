@@ -72,7 +72,7 @@
 
       
           
-        show(text);
+        show(intMainHeight);
       });
       function show(final){
        $('body').html(final); 
