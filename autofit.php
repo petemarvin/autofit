@@ -66,7 +66,7 @@
             $('#text').css('font-size', intFontSize+ 'px');
             intMainHeight = $('#main').height();
             intTextHeight = $('#text').height();
-            text = text + intMainHeight + " : " + intTextHeight + "<br>";
+            text = text + intMainHeight + " : " + intTextHeight + "\n";
         }
         final = intFontSize;
 
