@@ -77,7 +77,7 @@
         show(final );
       });
       function show(final){
-        $('#main').hide(); 
+        //$('#main').hide(); 
        $('#font').html(final); 
       }
       
