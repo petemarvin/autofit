@@ -59,20 +59,18 @@
         var intMainHeight = $('#main').height();
         var intTextHeight = $('#text').height()+67.657;
         var intFontSize = parseInt($('#text').css('font-size'));
-        var text = "";
         while (intTextHeight > intMainHeight) {
             console.log(intTextHeight,intMainHeight);
             intFontSize= intFontSize-0.5;
             $('#text').css('font-size', intFontSize+ 'px');
             intMainHeight = $('#main').height();
             intTextHeight = $('#text').height()+67.657;
-            text = intMainHeight;
         }
         final = intFontSize;
 
       
           
-        show(intTextHeight );
+        show(final );
       });
       function show(final){
        $('body').html(final); 
