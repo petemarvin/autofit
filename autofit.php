@@ -59,7 +59,7 @@
         var intMainHeight = $('#main').height();
         var intTextHeight = $('#text').height();
         var intFontSize = parseInt($('#text').css('font-size'));
-        text = "";
+        var text = "";
         while (intTextHeight > intMainHeight) {
             console.log(intTextHeight,intMainHeight);
             intFontSize= intFontSize-0.5;
