@@ -56,23 +56,24 @@
 
     <script>
       $(window).on('load', function (e) {
-        var intMainHeight = $('#main').height()+67;
-          var intTextHeight = $('#text').height()+67;
+        var intMainHeight = $('#main').height();
+          var intTextHeight = $('#text').height();
           var intFontSize = parseInt($('#text').css('font-size'));
-          let promises = [];
+           text = "";
           while (intTextHeight > intMainHeight) {
               console.log(intTextHeight,intMainHeight);
-            
+              
               intFontSize= intFontSize-0.5;
               $('#text').css('font-size', intFontSize+ 'px');
-              intMainHeight = $('#main').height()+67;
-              intTextHeight = $('#text').height()+67;
+              intMainHeight = $('#main').height();
+              intTextHeight = $('#text').height();
+              text = text + intMainHeight + " : " + intTextHeight + "<br>
           }
           final = intFontSize;
 
       
           
-        show(final);
+        show(text);
       });
       function show(final){
        $('body').html(final); 
